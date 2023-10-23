@@ -1,0 +1,124 @@
+.sections {
+    display: block;
+    margin-top: 70px;
+    padding: 10px;
+}
+.list-style {
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-flow: dense;
+}
+.header-section {
+    font-size: 30px;
+    
+}
+.content-header {
+    border-bottom: 5px solid #3f79e6;
+}
+
+.reload i:hover {
+    transform: rotate(90deg);
+}
+.reload i {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #3f79e6;
+    transition: transform 1s;
+}
+.item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff; 
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.video {
+    border: 1px #ff7f00 solid;
+}
+.work {
+    border: 1px #3f79e6 solid;
+}
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    transition: opacity 0.5s ease-in-out;
+    transition: 1s ease;
+}
+.thumbnail:hover {
+    scale: 0.98;
+}
+.type-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(63, 121, 230);
+}
+.title-video {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.title-popup {
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 100;
+
+    border-radius: 10px;
+    margin: 0 5px 0 5px 5px;
+    font-weight: 600;
+    max-height: 200px;
+    word-wrap: break-word;
+    max-width: 100%;
+
+}
+.title-video:hover + .title-popup{
+    display: block;
+}
+.infor {
+
+    color: gray;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+    white-space: nowrap; /* Ngăn ngừng xuống dòng */
+    overflow: hidden;   /* Ẩn phần dư thừa nếu vượt quá khung */
+    text-overflow: ellipsis; /* Hiển thị dấu ... nếu vượt quá khung */
+}
+.datecreate,
+.auther {
+    font-weight: 600;
+}
+.view {
+    float: right;
+}
+
+/* For Homework */
+.dowork {
+    display: flex;
+    justify-content: flex-end;
+}
+.dowork span {
+    
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #3f79e6;
+    color: #fff;
+}

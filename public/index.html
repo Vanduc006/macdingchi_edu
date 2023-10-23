@@ -1,0 +1,123 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://kit.fontawesome.com/493cf92c43.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script>
+var currentURL = window.location.href;
+
+// Tìm vị trí của ký tự '?' trong URL
+var indexOfQuestionMark = currentURL.indexOf('?');
+
+// Kiểm tra xem '?' có tồn tại trong URL
+if (indexOfQuestionMark !== -1) {
+    // Lấy phần query string (tham số) từ URL
+    var queryString = currentURL.substring(indexOfQuestionMark + 1);
+
+    // Sử dụng URLSearchParams để trích xuất tham số từ query string
+    var urlParams = new URLSearchParams(queryString);
+
+    // Lấy giá trị của tham số 'id' từ URL
+    var id = urlParams.get('id');
+
+    // Kiểm tra xem 'id' có giá trị không rỗng và in ra nó
+    if (id) {
+        console.log('Giá trị của tham số "id" là:', id);
+    } else {
+        console.log('Tham số "id" không có giá trị trong URL.');
+    }
+} else {
+    console.log('Không tìm thấy tham số trong URL.');
+}
+        // Sử dụng fetch để tải nội dung từ header.html
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                // Tạo một phần tử con để chèn nội dung
+                const headerContent = document.createElement("div");
+                headerContent.innerHTML = data;
+                // Chèn nội dung vào phần tử con
+                document.getElementById('header-container').appendChild(headerContent);
+            })
+            .catch(error => console.error('Lỗi khi tải header.html:', error));
+
+        });
+
+    </script>
+
+    <!-- Các tài nguyên khác -->
+
+</head>
+<body>
+    <div id="header-container">
+        <!-- Nội dung header sẽ được chèn vào đây -->
+    </div>
+    <div class="sections">
+        <div class="header-section">
+            <span class="content-header">Hot Content</span>
+            <span class="reload">
+                <i class="fa-solid fa-rotate-right" style="color: #fff;font-size: 20px;"></i>
+            </span>
+        </div>
+        <div class="list-style">
+
+            <div class="item video">
+
+                <img src="https://img.youtube.com/vi/2V8m43BijF4/0.jpg" alt="Thumnail" class="thumbnail">
+                <div class="type-item" >
+                    <i class="fa-solid fa-graduation-cap" style="color: #3f79e6;"></i> Study Video | Math 8
+                </div>
+                <div class="title-video">Chúng tôi đi ăn bát phở 1 triệu ở Sài Gòn </div>
+                <div class="title-popup">
+                    Chúng tôi đi ăn bát phở 1 triệu ở Sài Gòn
+                </div>
+                <div class="infor">
+                    By <span class="auther">Lâm Văn Thanh</span> <br>
+                    Post Date <span class="datecreate">23/10/2023</span> <span class="view"><i class="fa-solid fa-eye"></i>1k</span>
+                </div>
+                
+                <!-- <button type="button" class="btn btn-primary button">Xem video</button> -->
+                <!-- <iframe src="https://www.youtube.com/embed/2V8m43BijF4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            </div>
+
+            <div class="item work">
+
+                <img src="https://img.freepik.com/free-vector/hand-drawn-college-entrance-exam-illustration_52683-112307.jpg?t=st=1698049369~exp=1698049969~hmac=3a503f51a6e76c52fd08a4372fa9b1181cfac3fc73bbf59774256d47dc48d1cc" alt="Thumnail" class="thumbnail">
+                <div class="type-item">
+                    <i class="fa-solid fa-file-lines"></i> Home Work | Math 8
+                </div>
+                <div class="title-video">Chúng tôi đi ăn bát phở 1 triệu ở Sài Gòn </div>
+                <div class="title-popup">
+                    Chúng tôi đi ăn bát phở 1 triệu ở Sài Gòn
+                </div>
+                <div class="infor">
+                    By <span class="auther">Lâm Văn Thanh</span> <br>
+                    Post Date <span class="datecreate">23/10/2023</span>
+                </div>
+                <div class="dowork">
+                    <span>Let's do it <i class="fa-solid fa-circle-right"></i></span>
+                </div>
+                <!-- <button type="button" class="btn btn-primary button">Xem video</button> -->
+                <!-- <iframe src="https://www.youtube.com/embed/2V8m43BijF4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            </div>
+
+            
+
+
+
+
+        <!-- Thêm nội dung khác tại đây -->
+        </div>
+    </div>
+</body>
+</html>
