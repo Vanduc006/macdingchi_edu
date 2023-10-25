@@ -8,11 +8,5 @@
 const titleVideo = document.querySelector('.title-video');
 const titlePopup = document.querySelector('.title-popup');
 
-titleVideo.addEventListener('mouseover', function () {
-    titlePopup.style.display = 'block';
-});
-  
-titleVideo.addEventListener('mouseout', function () {
-    titlePopup.style.display = 'none';
-});
+
   

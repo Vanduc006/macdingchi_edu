@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://kit.fontawesome.com/493cf92c43.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
+    
     <script>
 var currentURL = window.location.href;
 
@@ -110,14 +114,106 @@ if (indexOfQuestionMark !== -1) {
                 <!-- <button type="button" class="btn btn-primary button">Xem video</button> -->
                 <!-- <iframe src="https://www.youtube.com/embed/2V8m43BijF4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
             </div>
-
             
+            <div class="item swipecard" >
+                <div class="tile-swipecard">
+                    <i class="fa-solid fa-book-open"></i> English 12 | Units 5 Looking Back
+                </div>
+                
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                 
+                        <div class="swipecard-silde-content">
+                            <img src="https://img.freepik.com/free-vector/hand-drawn-college-entrance-exam-illustration_52683-112307.jpg?t=st=1698049369~exp=1698049969~hmac=3a503f51a6e76c52fd08a4372fa9b1181cfac3fc73bbf59774256d47dc48d1cc" alt="Thumnail" class="thumbnail">
+                            <div class="vocab">
+                                <span>Hello : Xin chào</span><br>
+                                <span>Phiên âm : həˈlō</span>
+                            </div>
+                            <!-- <button type="button" class="btn btn-primary button">Xem video</button> -->
+                            <!-- <iframe src="https://www.youtube.com/embed/2V8m43BijF4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        
+                        <div class="swipecard-silde-content">
+                            <img src="https://img.freepik.com/free-vector/hand-drawn-college-entrance-exam-illustration_52683-112307.jpg?t=st=1698049369~exp=1698049969~hmac=3a503f51a6e76c52fd08a4372fa9b1181cfac3fc73bbf59774256d47dc48d1cc" alt="Thumnail" class="thumbnail">
+                            <div class="vocab">
+                                <span>Hello : Xin chào</span><br>
+                                <span>Phiên âm : həˈlō</span>
+                            </div>
+                            <!-- <button type="button" class="btn btn-primary button">Xem video</button> -->
+                            <!-- <iframe src="https://www.youtube.com/embed/2V8m43BijF4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                        </div>
+                      </div>
 
 
-
-
+                      
+                    </div>
+                
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                      <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                      </svg>
+                      <span></span>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
         <!-- Thêm nội dung khác tại đây -->
         </div>
+
     </div>
+
+    <div class="sections n">
+        <div class="header-section">
+            <span class="content-header">Must Do Now
+                
+            </span>
+            <div class="btn-group dropedown" style="margin-left: 10px;background-color: #3f79e6;">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff;">
+                  Filter Grade
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item">Grade 10</a></li>
+                  <li><a class="dropdown-item">Grade 11</a></li>
+                  <li><a class="dropdown-item">Grade 12</a></li>
+                </ul>
+              </div>
+            
+        </div>
+        <div class="list-style">
+            <div class="item work">
+
+                <img src="https://img.freepik.com/free-vector/hand-drawn-college-entrance-exam-illustration_52683-112307.jpg?t=st=1698049369~exp=1698049969~hmac=3a503f51a6e76c52fd08a4372fa9b1181cfac3fc73bbf59774256d47dc48d1cc" alt="Thumnail" class="thumbnail">
+                <div class="type-item">
+                    <i class="fa-solid fa-file-lines"></i> Home Work | Math 8
+                </div>
+                <div class="title-video">Chúng tôi đi ăn bát phở 1 triệu ở Sài Gòn </div>
+                <div class="title-popup">
+                    Chúng tôi đi ăn bát phở 1 triệu ở Sài Gòn
+                </div>
+                <div class="infor">
+                    By <span class="auther">Lâm Văn Thanh</span> <br>
+                    Post Date <span class="datecreate">23/10/2023</span>
+                </div>
+                <div class="dowork">
+                    <span>Let's do it <i class="fa-solid fa-circle-right"></i></span>
+                </div>
+                <!-- <button type="button" class="btn btn-primary button">Xem video</button> -->
+                <!-- <iframe src="https://www.youtube.com/embed/2V8m43BijF4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+            </div>
+
+            
+        <!-- Thêm nội dung khác tại đây -->
+        </div>
+
+    </div>
+    
+
 </body>
+<script src="swipeCard.js"></script>
 </html>

@@ -1,7 +1,15 @@
+* {
+    --swiper-pagination-color: #41bbd9 ;
+    --swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
+    --swiper-pagination-fraction-color: #fff;
+}
 .sections {
     display: block;
     margin-top: 70px;
     padding: 10px;
+}
+.n {
+    margin-top: 20px;
 }
 .list-style {
     margin-top: 20px;
@@ -19,13 +27,13 @@
 }
 
 .reload i:hover {
-    transform: rotate(90deg);
+    transform: rotate(360deg);
 }
 .reload i {
     padding: 5px;
     border-radius: 50%;
     background-color: #3f79e6;
-    transition: transform 1s;
+    transition: transform 1s ease;
 }
 .item {
     cursor: pointer;
@@ -122,3 +130,69 @@
     background-color: #3f79e6;
     color: #fff;
 }
+
+/* For swipe card */
+.swipecard {
+    background-color: #adcad6;
+
+}
+.tile-swipecard {
+    color: #fff;
+}
+.swipecard-silde-content {
+    padding: 10px;
+}
+.vocab {
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.swiper {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border: 2px #fff solid;
+  }
+
+  .swiper-slide {
+   
+    font-size: 18px;
+    border-radius: 10px;
+
+  }
+.swiper-pagination {
+    border-radius: 10px;
+
+
+}
+
+  .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: #fff;
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
